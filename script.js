@@ -244,7 +244,7 @@ window.verificarResposta = function(escolha) {
     }
 
     // Aguarda 5 segundos mostrando a resposta e então abre o modal explicativo
-    setTimeout(mostrarExplicacao, 5000);
+    setTimeout(mostrarExplicacao, 3000);
 }
 
 function mostrarFeedback(acertou) {
