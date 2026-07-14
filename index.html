@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo de Charadas e Metáforas</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <section id="tela-inicial" class="tela ativa">
+        <div class="conteudo-inicial">
+            <h1 class="titulo-jogo">Charadas & Metáforas</h1>
+            <p class="decoracao">✨ Teste sua mente, vire as cartas e descubra a verdade! ✨</p>
+            <button id="btn-comecar" class="btn-primario">COMEÇAR</button>
+        </div>
+    </section>
+
+    <section id="tela-jogo" class="tela oculta">
+        <header class="barra-superior">
+            <button id="btn-regras" class="btn-secundario">Regras</button>
+            <div class="placar-container">
+                <span class="placar-texto">PONTOS</span>
+                <span id="pontos" class="placar-numero">0</span>
+            </div>
+        </header>
+
+        <main class="area-principal">
+            
+            <div class="area-pergunta">
+                <div class="carta-pergunta">
+                    <span id="numero-carta" class="badge">A1</span>
+                    <p id="texto-pergunta">Carregando pergunta...</p>
+                </div>
+            </div>
+
+            <div class="area-imagem">
+                <div id="carta-flip" class="carta-imagem">
+                    <div class="carta-inner">
+                        <div class="face frente">
+                            <img id="img-frente" src="imagens/placeholder.png" alt="Frente da Carta">
+                        </div>
+                        <div class="face verso">
+                            <img id="img-verso" src="imagens/placeholder.png" alt="Verso da Carta">
+                        </div>
+                    </div>
+                </div>
+                <p class="dica-clique">👆 Clique na carta para virar</p>
+            </div>
+
+            <div class="area-quiz">
+                <h3>Qual é a resposta certa para essa charada?</h3>
+                <div class="botoes-quiz">
+                    <button class="btn-quiz" onclick="verificarResposta('frente')">A) Carta no lado da frente</button>
+                    <button class="btn-quiz" onclick="verificarResposta('verso')">B) Carta no verso</button>
+                </div>
+                <p id="mensagem-feedback" class="mensagem oculta"></p>
+            </div>
+        </main>
+    </section>
+
+    <section id="tela-final" class="tela oculta">
+        <div class="conteudo-final">
+            <h1 id="mensagem-final-titulo">Fim de Jogo!</h1>
+            <p id="mensagem-final-texto" class="texto-resultado"></p>
+            <p class="pontuacao-final"><span id="pontos-finais">0</span> de 20 pontos.</p>
+            <button id="btn-reiniciar" class="btn-primario">REINICIAR</button>
+        </div>
+    </section>
+
+    <div id="modal-regras" class="modal oculta">
+        <div class="modal-conteudo">
+            <button id="btn-fechar-regras" class="btn-fechar">&times;</button>
+            <h2>Regras do Jogo</h2>
+            <img src="regras/regras.png" alt="Regras do Jogo" class="img-regras">
+        </div>
+    </div>
+
+    <div id="modal-explicacao" class="modal oculta">
+        <div class="modal-conteudo animacao-entrada">
+            <h2>Explicação</h2>
+            <p id="texto-explicacao">Aqui vai a explicação...</p>
+            <button id="btn-proxima-carta" class="btn-primario">Próxima Carta</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
