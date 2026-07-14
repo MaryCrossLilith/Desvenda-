@@ -1,126 +1,128 @@
-// ==========================================
-// DADOS DO JOGO (20 Cartas de Perguntas e Respostas)
-// ==========================================
+// =========================================================================
+// GABARITO DO SEU JOGO (Personalize as 20 cartas aqui embaixo!)
+// =========================================================================
+// IMPORTANTE: Em "respostaCorreta", digite apenas "frente" ou "verso" (minúsculo)
+// =========================================================================
 const dadosPerguntas = [
     {
         id: "A1",
-        texto: "Sou a base de tudo, mas se me molhar, eu desmorono. O que a imagem representa?",
-        respostaCorreta: "frente",
-        explicacao: "Explicação A1: A frente mostra um castelo de areia, representando a fragilidade da base."
+        texto: "Digite aqui a pergunta para a carta A1...",
+        respostaCorreta: "frente", 
+        explicacao: "Explique aqui por que a FRENTE da carta A1 é a resposta certa."
     },
     {
         id: "A2",
-        texto: "Tenho folhas, mas não sou árvore. Onde está a verdadeira resposta?",
-        respostaCorreta: "verso",
-        explicacao: "Explicação A2: O verso mostra um livro, a metáfora exata para 'folhas que não são de árvore'."
+        texto: "Digite aqui a pergunta para a carta A2...",
+        respostaCorreta: "verso", 
+        explicacao: "Explique aqui por que o VERSO da carta A2 é a resposta certa."
     },
     {
         id: "A3",
-        texto: "Ando o dia todo e quando chega a noite, durmo com a boca aberta.",
-        respostaCorreta: "frente",
-        explicacao: "Explicação A3: A frente exibe um sapato. É a resposta clássica para esta charada."
+        texto: "Digite aqui a pergunta para a carta A3...",
+        respostaCorreta: "frente", 
+        explicacao: "Explique aqui por que a FRENTE da carta A3 é a resposta certa."
     },
     {
         id: "A4",
-        texto: "Quanto mais você tira, maior eu fico. Olhe a imagem e decida.",
-        respostaCorreta: "verso",
-        explicacao: "Explicação A4: O verso mostra um buraco no chão. Ao tirar terra, ele cresce."
+        texto: "Digite aqui a pergunta para a carta A4...",
+        respostaCorreta: "verso", 
+        explicacao: "Explique aqui por que o VERSO da carta A4 é a resposta certa."
     },
     {
         id: "A5",
-        texto: "Tenho dentes, mas não mordo. O que sou?",
-        respostaCorreta: "frente",
-        explicacao: "Explicação A5: A frente ilustra um pente, uma metáfora visual para os 'dentes'."
+        texto: "Digite aqui a pergunta para a carta A5...",
+        respostaCorreta: "frente", 
+        explicacao: "Explique aqui por que a FRENTE da carta A5 é a resposta certa."
     },
     {
         id: "A6",
-        texto: "Voo sem asas, choro sem olhos. Qual face revela minha forma?",
-        respostaCorreta: "verso",
-        explicacao: "Explicação A6: O verso apresenta uma nuvem, que se move no céu e derrama chuva."
+        texto: "Digite aqui a pergunta para a carta A6...",
+        respostaCorreta: "verso", 
+        explicacao: "Explique aqui por que o VERSO da carta A6 é a resposta certa."
     },
     {
         id: "A7",
-        texto: "Caio em pé e corro deitada.",
-        respostaCorreta: "frente",
-        explicacao: "Explicação A7: A imagem da chuva na frente da carta é a resposta correta."
+        texto: "Digite aqui a pergunta para a carta A7...",
+        respostaCorreta: "frente", 
+        explicacao: "Explique aqui por que a FRENTE da carta A7 é a resposta certa."
     },
     {
         id: "A8",
-        texto: "Nasço grande e morro pequeno.",
-        respostaCorreta: "verso",
-        explicacao: "Explicação A8: O verso ilustra um lápis, que diminui conforme é utilizado."
+        texto: "Digite aqui a pergunta para a carta A8...",
+        respostaCorreta: "verso", 
+        explicacao: "Explique aqui por que o VERSO da carta A8 é a resposta certa."
     },
     {
         id: "A9",
-        texto: "Tenho cabeça e dentes, mas não sou bicho nem gente.",
-        respostaCorreta: "frente",
-        explicacao: "Explicação A9: A frente mostra um alho, famoso por sua 'cabeça' e 'dentes'."
+        texto: "Digite aqui a pergunta para a carta A9...",
+        respostaCorreta: "frente", 
+        explicacao: "Explique aqui por que a FRENTE da carta A9 é a resposta certa."
     },
     {
         id: "A10",
-        texto: "Falo todas as línguas, mas não tenho boca.",
-        respostaCorreta: "verso",
-        explicacao: "Explicação A10: O verso contém a imagem de um eco, refletindo sons do mundo."
+        texto: "Digite aqui a pergunta para a carta A10...",
+        respostaCorreta: "verso", 
+        explicacao: "Explique aqui por que o VERSO da carta A10 é a resposta certa."
     },
     {
         id: "A11",
-        texto: "Quanto mais seca, mais molhada fica.",
-        respostaCorreta: "frente",
-        explicacao: "Explicação A11: A toalha na frente da carta absorve a água, ficando molhada."
+        texto: "Digite aqui a pergunta para a carta A11...",
+        respostaCorreta: "verso", // Defina se é frente ou verso conforme o seu design!
+        explicacao: "Explique aqui por que o VERSO da carta A11 é a resposta certa."
     },
     {
         id: "A12",
-        texto: "Tenho pescoço, mas não tenho cabeça.",
-        respostaCorreta: "verso",
-        explicacao: "Explicação A12: O verso ilustra uma garrafa."
+        texto: "Digite aqui a pergunta para a carta A12...",
+        respostaCorreta: "verso", 
+        explicacao: "Explique aqui por que o VERSO da carta A12 é a resposta certa."
     },
     {
         id: "A13",
-        texto: "O que é, o que é: entra na água e não se molha?",
-        respostaCorreta: "frente",
-        explicacao: "Explicação A13: A sombra, ilustrada na frente, passa pela água intacta."
+        texto: "Digite aqui a pergunta para a carta A13...",
+        respostaCorreta: "frente", 
+        explicacao: "Explique aqui por que a FRENTE da carta A13 é a resposta certa."
     },
     {
         id: "A14",
-        texto: "Sou feito de água, mas se me colocarem na água, eu sumo.",
-        respostaCorreta: "verso",
-        explicacao: "Explicação A14: O cubo de gelo no verso derrete ao entrar em contato com a água."
+        texto: "Digite aqui a pergunta para a carta A14...",
+        respostaCorreta: "verso", 
+        explicacao: "Explique aqui por que o VERSO da carta A14 é a resposta certa."
     },
     {
         id: "A15",
-        texto: "Tenho olhos, mas não vejo.",
-        respostaCorreta: "frente",
-        explicacao: "Explicação A15: A frente exibe um furacão, que tem um 'olho' cego em seu centro."
+        texto: "Digite aqui a pergunta para a carta A15...",
+        respostaCorreta: "frente", 
+        explicacao: "Explique aqui por que a FRENTE da carta A15 é a resposta certa."
     },
     {
         id: "A16",
-        texto: "Passo por todas as portas sem precisar abrir nenhuma.",
-        respostaCorreta: "verso",
-        explicacao: "Explicação A16: O vento, no verso, atravessa as frestas sem abrir portas."
+        texto: "Digite aqui a pergunta para a carta A16...",
+        respostaCorreta: "verso", 
+        explicacao: "Explique aqui por que o VERSO da carta A16 é a resposta certa."
     },
     {
         id: "A17",
-        texto: "O que tem que ser quebrado antes de ser usado?",
-        respostaCorreta: "frente",
-        explicacao: "Explicação A17: O ovo na parte da frente da carta é a resposta clássica."
+        texto: "Digite aqui a pergunta para a carta A17...",
+        respostaCorreta: "frente", 
+        explicacao: "Explique aqui por que a FRENTE da carta A17 é a resposta certa."
     },
     {
         id: "A18",
-        texto: "Pertenço a você, mas os outros me usam mais do que você mesmo.",
-        respostaCorreta: "verso",
-        explicacao: "Explicação A18: O verso mostra um crachá com o seu nome."
+        texto: "Digite aqui a pergunta para a carta A18...",
+        respostaCorreta: "verso", 
+        explicacao: "Explique aqui por que o VERSO da carta A18 é a resposta certa."
     },
     {
         id: "A19",
-        texto: "Subo quando a chuva desce.",
-        respostaCorreta: "frente",
-        explicacao: "Explicação A19: O guarda-chuva na parte da frente é aberto quando chove."
+        texto: "Digite aqui a pergunta para a carta A19...",
+        respostaCorreta: "frente", 
+        explicacao: "Explique aqui por que a FRENTE da carta A19 é a resposta certa."
     },
     {
         id: "A20",
-        texto: "Nunca faço perguntas, mas sempre exijo respostas.",
-        respostaCorreta: "verso",
-        explicacao: "Explicação A20: O telefone tocando no verso exige que alguém atenda."
+        texto: "Digite aqui a pergunta para a carta A20...",
+        respostaCorreta: "verso", 
+        explicacao: "Explique aqui por que o VERSO da carta A20 é a resposta certa."
     }
 ];
 
@@ -168,7 +170,7 @@ const btnProximaCarta = document.getElementById('btn-proxima-carta');
 btnComecar.addEventListener('click', iniciarJogo);
 btnReiniciar.addEventListener('click', iniciarJogo);
 
-// Executa o efeito de virar a carta ao clicar
+// Executa o efeito de virar a carta ao clicar nela
 cartaFlip.addEventListener('click', () => {
     cartaFlip.classList.toggle('virada');
 });
@@ -187,7 +189,7 @@ function iniciarJogo() {
     indiceAtual = 0;
     atualizarPlacar();
     
-    // Sorteia as 20 cartas de forma aleatória para não virem na mesma ordem
+    // Sorteia as 20 cartas de forma aleatória sem repetição
     cartasSorteadas = sortearArray([...dadosPerguntas]);
     
     esconderTodasTelas();
@@ -201,23 +203,23 @@ function carregarCarta() {
     
     elCartaAtualNumero.textContent = indiceAtual + 1;
     
-    // Sincroniza a carta de pergunta carregando sua respectiva imagem
+    // Alimenta a pergunta e altera o caminho da imagem correspondente
     elNumeroCarta.textContent = cartaAtual.id;
     elTextoPergunta.textContent = cartaAtual.texto;
     elImgPergunta.src = `imagens/${cartaAtual.id}_pergunta.png`;
     
-    // Sincroniza a carta de resposta com a frente e verso corretos do ID atual
+    // Alimenta a carta de resposta com a frente e verso do ID atual
     elImgFrente.src = `imagens/${cartaAtual.id}_frente.png`;
     elImgVerso.src = `imagens/${cartaAtual.id}_verso.png`;
     
-    // Reseta o estado da carta de resposta (mostrando a frente no início)
+    // Reseta o estado da animação da carta para ela começar desvirada
     cartaFlip.classList.remove('virada'); 
     msgFeedback.classList.add('oculta');
     
     botoesQuiz.forEach(btn => btn.disabled = false);
 }
 
-// Algoritmo Fisher-Yates para embaralhar as cartas sem repetição
+// Algoritmo Fisher-Yates para embaralhar o deck
 function sortearArray(array) {
     for (let i = array.length - 1; i > 0; i--) {
         const j = Math.floor(Math.random() * (i + 1));
@@ -232,6 +234,7 @@ function sortearArray(array) {
 window.verificarResposta = function(escolha) {
     botoesQuiz.forEach(btn => btn.disabled = true);
     
+    // Verifica se a escolha do jogador casa com a "respostaCorreta" definida por você
     if (escolha === cartaAtual.respostaCorreta) {
         pontuacao++;
         atualizarPlacar();
@@ -240,7 +243,7 @@ window.verificarResposta = function(escolha) {
         mostrarFeedback(false);
     }
 
-    // Aguarda 5 segundos mostrando a resposta e então abre o modal de explicação
+    // Aguarda 5 segundos mostrando a resposta e então abre o modal explicativo
     setTimeout(mostrarExplicacao, 5000);
 }
 
