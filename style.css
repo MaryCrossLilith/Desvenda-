@@ -436,39 +436,41 @@ body {
 }
 
 /* =========================================================================
-   INDICADORES DE LADO (FLUTUANDO ACIMA DA CARTA)
+   INDICADORES DE LADO CORRIGIDOS (FLUTUANDO ACIMA DA CARTA REAL)
    ========================================================================= */
 
-/* Abre um espaço acima da carta para o balão não ficar colado no topo */
-.carta-container {
+/* Abre um espaço acima da carta para o balão não ficar espremido */
+.carta-imagem, .area-imagem {
     position: relative !important;
     margin-top: 50px !important; 
 }
 
 /* Criando o indicador padrão (LADO FRENTE) */
-.carta-container::before {
+.carta-imagem::before, .area-imagem::before {
     content: "LADO FRENTE";
     position: absolute;
-    top: -40px; /* Joga o texto para cima, fora da carta */
+    top: -40px; /* Joga o texto para fora e ACIMA da carta */
     left: 50%;
     transform: translateX(-50%);
-    background-color: #4CAF50; /* Verde */
+    background-color: #4CAF50; /* Verde sólido */
     color: #ffffff;
-    padding: 5px 15px;
-    font-size: 12px;
+    padding: 6px 16px;
+    font-size: 11px;
     font-weight: bold;
-    border-radius: 15px;
+    border-radius: 20px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.15);
-    z-index: 999;
+    z-index: 999; /* Garante que fique na frente de tudo */
     white-space: nowrap;
-    pointer-events: none; /* Garante que clicar no texto também vire a carta */
+    pointer-events: none; /* Evita que o balão atrapalhe o clique na carta */
 }
 
-/* Quando a carta estiver virada, o indicador muda automaticamente para (LADO VERSO) */
-.carta-container:has(.virada)::before,
-.carta-container.virada::before {
+/* Quando a carta estiver virada (com a classe 'virada'), o indicador muda automaticamente */
+.carta-imagem.virada::before,
+.carta-imagem:has(.virada)::before,
+.area-imagem.virada::before,
+.area-imagem:has(.virada)::before {
     content: "LADO VERSO";
-    background-color: #f44336; /* Vermelho */
+    background-color: #f44336; /* Vermelho sólido */
 }
 
 /* Botão de Ajuste de Zoom (Tela Inicial) */
