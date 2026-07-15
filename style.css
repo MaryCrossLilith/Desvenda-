@@ -436,45 +436,57 @@ body {
 }
 
 /* =========================================================================
-   INDICAÇÕES VISUAIS FLUTUANDO ACIMA DA CARTA
+   INDICADORES DE LADO (FLUTUANDO ACIMA DA CARTA)
    ========================================================================= */
 
-/* Etiqueta para a Frente (Flutuando Acima) */
-.frente::after {
-    content: "LADO FRENTE";
-    position: absolute;
-    top: -35px; /* O valor negativo joga o texto para fora e ACIMA da carta */
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: #4CAF50; /* Verde sólido */
-    color: #ffffff;
-    padding: 5px 15px;
-    font-size: 11px;
-    font-weight: bold;
-    border-radius: 15px;
-    letter-spacing: 1px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.15);
-    z-index: 10;
-    pointer-events: none;
-    white-space: nowrap; /* Evita que o texto quebre em duas linhas */
+/* Abre um espaço acima da carta para o balão não ficar colado no topo */
+.carta-container {
+    position: relative !important;
+    margin-top: 50px !important; 
 }
 
-/* Etiqueta para o Verso (Flutuando Acima) */
-.verso::after {
-    content: "LADO VERSO";
+/* Criando o indicador padrão (LADO FRENTE) */
+.carta-container::before {
+    content: "LADO FRENTE";
     position: absolute;
-    top: -35px; /* Também joga para cima */
+    top: -40px; /* Joga o texto para cima, fora da carta */
     left: 50%;
     transform: translateX(-50%);
-    background-color: #f44336; /* Vermelho sólido */
+    background-color: #4CAF50; /* Verde */
     color: #ffffff;
     padding: 5px 15px;
-    font-size: 11px;
+    font-size: 12px;
     font-weight: bold;
     border-radius: 15px;
-    letter-spacing: 1px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.15);
-    z-index: 10;
-    pointer-events: none;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+    z-index: 999;
     white-space: nowrap;
+    pointer-events: none; /* Garante que clicar no texto também vire a carta */
+}
+
+/* Quando a carta estiver virada, o indicador muda automaticamente para (LADO VERSO) */
+.carta-container:has(.virada)::before,
+.carta-container.virada::before {
+    content: "LADO VERSO";
+    background-color: #f44336; /* Vermelho */
+}
+
+/* Botão de Ajuste de Zoom (Tela Inicial) */
+.botao-ajuda-zoom {
+    background-color: #ffeeba;
+    color: #856404;
+    border: 1px solid #ffeeba;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    margin: 15px auto;
+    display: block; /* Garante que fique centralizado */
+    transition: all 0.2s ease;
+}
+
+.botao-ajuda-zoom:hover {
+    background-color: #ffd966;
+    transform: scale(1.05); /* Efeito de aumentar de leve ao passar o mouse */
 }
